@@ -1,0 +1,44 @@
+{
+  "slug": "publicnode-mainnet-public-recent-state",
+  "provider": "PublicNode",
+  "offer": null,
+  "actionButtons": [
+    "[Docs](https://avalanche-c-chain.publicnode.com/)"
+  ],
+  "planName": null,
+  "planType": "Public",
+  "historicalData": "Pruned",
+  "apiType": "RPC",
+  "technology": "EVM JSON-RPC",
+  "accessPrice": "$0",
+  "queryPrice": "$0",
+  "starred": false,
+  "trial": false,
+  "availableApis": [
+    "eth",
+    "web3",
+    "net"
+  ],
+  "limitations": null,
+  "securityImprovements": [
+    "DDoS Protection",
+    "Privacy-relays"
+  ],
+  "monitoringAndAnalytics": [
+    "Tracking key",
+    "Node health metrics",
+    "Advanced monitoring",
+    "Custom metrics"
+  ],
+  "regions": [
+    "Global"
+  ],
+  "additionalFeatures": null,
+  "address": null,
+  "tag": null,
+  "uptimeSla": null,
+  "blocksBehindSla": null,
+  "bandwidthSla": null,
+  "supportSla": null,
+  "chain": "mainnet"
+}

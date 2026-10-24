@@ -1,0 +1,209 @@
+{
+  "source_tools_revision": "830d5f05ae15954c43ef23f4085c83d4548d5431",
+  "fixture_data_revision": "a5a4277ea76394eef5e721bccae3dbab376e887c",
+  "fixture_slug": "publicnode-mainnet-public-recent-state",
+  "fixture_note": "PublicNode's actual technology is known; blank values are synthetic inputs only.",
+  "validator": "Draft202012Validator",
+  "schema_sha256_as_read": "4195ece4587d8e5811961095ae7fc9775696c4f4072327c1a0d5467dc3802774",
+  "schema_pointer": "/$defs/apis/properties/technology/type",
+  "proposed_type_only": [
+    "string",
+    "null"
+  ],
+  "required_key_retained": true,
+  "case_count": 10,
+  "validation_count": 20,
+  "all_expected_outcomes_observed": true,
+  "production_schema_modified": false,
+  "network_calls": 0,
+  "cases": [
+    {
+      "case": "valid_existing_string",
+      "current": {
+        "valid": true,
+        "errors": []
+      },
+      "proposed": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "empty_csv_cell",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "None is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "null_csv_cell",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "None is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "whitespace_csv_cell",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "None is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": true,
+        "errors": []
+      }
+    },
+    {
+      "case": "integer",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "7 is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "7 is not of type 'string', 'null'"
+          }
+        ]
+      }
+    },
+    {
+      "case": "boolean",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "False is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "False is not of type 'string', 'null'"
+          }
+        ]
+      }
+    },
+    {
+      "case": "array",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "[] is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "[] is not of type 'string', 'null'"
+          }
+        ]
+      }
+    },
+    {
+      "case": "object",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "{} is not of type 'string'"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0/technology",
+            "keyword": "type",
+            "message": "{} is not of type 'string', 'null'"
+          }
+        ]
+      }
+    },
+    {
+      "case": "missing_required_key",
+      "current": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0",
+            "keyword": "required",
+            "message": "'technology' is a required property"
+          }
+        ]
+      },
+      "proposed": {
+        "valid": false,
+        "errors": [
+          {
+            "path": "/apis/0",
+            "keyword": "required",
+            "message": "'technology' is a required property"
+          }
+        ]
+      }
+    },
+    {
+      "case": "direct_json_empty_string",
+      "current": {
+        "valid": true,
+        "errors": []
+      },
+      "proposed": {
+        "valid": true,
+        "errors": []
+      }
+    }
+  ]
+}
